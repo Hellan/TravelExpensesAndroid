@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_weight="1"
+        android:text="TRAVEL EXPENSES "
+        android:textColor="#00ccff"
+        android:textSize="37dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout0"
+        android:paddingTop="30dp">
+       >
+
+        <TextView
+            android:id="@+id/distanceLabel"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Distance: "
+            android:textColor="#00ccff"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textSize="30dp"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:paddingTop="80dp">
+
+        <TextView
+            android:id="@+id/kPLLabel"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Litres Per 100 KM: "
+            android:textColor="#00ccff"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/kPL"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textSize="30dp"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:paddingTop="80dp">
+
+        <TextView
+            android:id="@+id/priceLabel"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Price: "
+            android:textColor="#00ccff"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textSize="30dp"
+            android:inputType="numberDecimal"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:gravity="center"
+        android:paddingTop="80dp">
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/black"
+            android:src="@drawable/button"
+            android:text="Calculate: "
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:contentDescription="Result?" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout4"
+        android:gravity="center"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="25dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
